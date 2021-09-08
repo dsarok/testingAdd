@@ -12,7 +12,16 @@ public class Stringcalculator {
 			for(int i=0;i<parts.length;i++) {
 				String[]parts2=parts[i].split("\n");
 				for(int j=0;j<parts2.length;j++) {
-					k+=Integer.parseInt(parts2[j]);
+					String[]parts3=parts2[j].split("/");
+					for(int l=0;l<parts3.length;l++) {
+						String[]parts4=parts3[l].split(";");
+						for(int m=0;m<parts4.length;m++) {
+							int h=Integer.parseInt(parts4[m]);
+							if(h<1000) {
+								k+=h;
+							}
+						}
+					}
 				}
 			}
 			return k;

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-09T03:20:06 IST" name="Default suite" finished-at="2021-09-09T03:20:06 IST" duration-ms="51">
+  <suite started-at="2021-09-09T03:37:02 IST" name="Default suite" finished-at="2021-09-09T03:37:02 IST" duration-ms="49">
     <groups>
     </groups>
-    <test started-at="2021-09-09T03:20:06 IST" name="Default test" finished-at="2021-09-09T03:20:06 IST" duration-ms="51">
+    <test started-at="2021-09-09T03:37:02 IST" name="Default test" finished-at="2021-09-09T03:37:02 IST" duration-ms="49">
       <class name="base.code.testing">
-        <test-method signature="noinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T03:20:06 IST" name="noinput" finished-at="2021-09-09T03:20:06 IST" duration-ms="9" status="PASS">
+        <test-method signature="noinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T03:37:02 IST" name="noinput" finished-at="2021-09-09T03:37:02 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noinput -->
-        <test-method signature="singleinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T03:20:06 IST" name="singleinput" finished-at="2021-09-09T03:20:06 IST" duration-ms="1" status="PASS">
+        <test-method signature="singleinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T03:37:02 IST" name="singleinput" finished-at="2021-09-09T03:37:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleinput -->

@@ -12,9 +12,9 @@ public class testing {
 	}
 	@Test
 	public void singleinput() {
-		final int expected=1;
+		final int expected=143+99;
 		Stringcalculator addi=new Stringcalculator();
-		final int actual=addi.Add("1");
+		final int actual=addi.Add("143;99");
 		assertEquals(actual,expected);
 	}
 }
