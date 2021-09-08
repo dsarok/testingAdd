@@ -8,11 +8,14 @@ public class Stringcalculator {
 		}
 		else {
 			String []parts=numbers.split(",");
-			int j=0;
+			int k=0;
 			for(int i=0;i<parts.length;i++) {
-				j+=Integer.parseInt(parts[i]);
+				String[]parts2=parts[i].split("\n");
+				for(int j=0;j<parts2.length;j++) {
+					k+=Integer.parseInt(parts2[j]);
+				}
 			}
-			return j;
+			return k;
 		}
 	}
 }

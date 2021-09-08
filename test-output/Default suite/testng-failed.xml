@@ -5,7 +5,7 @@
     <classes>
       <class name="base.code.testing">
         <methods>
-          <include name="noinput"/>
+          <include name="singleinput"/>
         </methods>
       </class> <!-- base.code.testing -->
     </classes>

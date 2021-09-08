@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class testing {
 	@Test
 	public void noinput() {
-		final int expected=-1;
+		final int expected=0;
 		Stringcalculator addi=new Stringcalculator();
 		final int actual=addi.Add("");
 		assertEquals(actual,expected);
@@ -12,9 +12,9 @@ public class testing {
 	}
 	@Test
 	public void singleinput() {
-		final int expected=1234;
+		final int expected=1;
 		Stringcalculator addi=new Stringcalculator();
-		final int actual=addi.Add("1234");
+		final int actual=addi.Add("1");
 		assertEquals(actual,expected);
 	}
 }
