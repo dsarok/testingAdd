@@ -5,7 +5,7 @@
     <classes>
       <class name="base.code.testing">
         <methods>
-          <include name="negativenumber"/>
+          <include name="input1"/>
         </methods>
       </class> <!-- base.code.testing -->
     </classes>

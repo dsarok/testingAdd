@@ -1,30 +1,45 @@
 package base.code;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+public class Stringcalculator extends Exception{
 
-public class Stringcalculator {
-
-	public int Add(String numbers) throws Exception {
-		if(numbers.length()==0) {
-				return 0;
-		}
-		else {
-			
-			String negative="";
-			int k=0;
-			String[] kh=(numbers.split("[\\W]+"));
-			for(int i=0;i<kh.length;i++) {
-				int h=Integer.parseInt(kh[i]);
-				if(h<1000 && h>0) {
-					k+=h;
-				}
-				else if(h<0) {
-					negative+=h+" ";
-				}
+	public static int count=0;
+	 public int GetCalledCount() {
+		 return Stringcalculator.count;
+	 }
+	 
+	 public int Add(String r) throws Exception  {
+		 count++;
+		 String ss="";
+		 String[] kh=(r.split("\\D{1}"));
+		 String pattern="\\-\\d+";
+		 Pattern re=Pattern.compile(pattern);
+		 Matcher m=re.matcher(r);
+		 while (m.find()) {
+		       ss+=m.group()+ " ";
+		    } 
+		 if(kh.length==0) {
+			 System.out.print("no integer");
+			 return 0;
+			 
+		 }
+		 int ir=0;
+		 for(int i=0;i<kh.length;i++) {
+			if(kh[i].length()>0)
+			{int y=Integer.parseInt(kh[i]);
+			if(y<0) {
+				ss+=y+" ";
+			}
+			else if(y<1000) {
+				ir+=y;
+			}
 			}
 			
-			if (negative.length()>0) {
-				throw new Exception("no negative numbers allowed"+negative);
-			}
-			return k;
-		}
-	}
+		 }
+		 if(ss.length()>0) {
+			 throw new Exception("no negative numbers allowed "+ss);
+		 }
+		 return ir;
+	 }
+
 }

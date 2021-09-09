@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 09 15:00:47 IST 2021</td>
+<td>Started on:</td><td>Thu Sep 09 21:20:13 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (69 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (53 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='base.code.testing.negativenumber()'><b>negativenumber</b><br>Test class: base.code.testing</td>
-<td><div><pre>java.lang.AssertionError: expected [242] but found [248]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at base.code.testing.negativenumber(testing.java:18)
+<td title='base.code.testing.input1()'><b>input1</b><br>Test class: base.code.testing</td>
+<td><div><pre>java.lang.Exception: no negative numbers allowed -9 -2 -4 -655 
+	at base.code.Stringcalculator.Add(Stringcalculator.java:40)
+	at base.code.testing.input1(testing.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +107,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace613298587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace613298587'><pre>java.lang.AssertionError: expected [242] but found [248]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at base.code.testing.negativenumber(testing.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1961501712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961501712'><pre>java.lang.Exception: no negative numbers allowed -9 -2 -4 -655 
+	at base.code.Stringcalculator.Add(Stringcalculator.java:40)
+	at base.code.testing.input1(testing.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +141,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>base.code.testing@73ee04c8</td></tr>
+<td>base.code.testing@6b8ca3c8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,15 +151,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='base.code.testing.input3()'><b>input3</b><br>Test class: base.code.testing</td>
+<td></td>
+<td>0</td>
+<td>base.code.testing@6b8ca3c8</td></tr>
+<tr>
+<td title='base.code.testing.negativenumber()'><b>negativenumber</b><br>Test class: base.code.testing</td>
+<td></td>
+<td>0</td>
+<td>base.code.testing@6b8ca3c8</td></tr>
+<tr>
 <td title='base.code.testing.noinput()'><b>noinput</b><br>Test class: base.code.testing</td>
 <td></td>
 <td>0</td>
-<td>base.code.testing@73ee04c8</td></tr>
+<td>base.code.testing@6b8ca3c8</td></tr>
 <tr>
-<td title='base.code.testing.simpleinput()'><b>simpleinput</b><br>Test class: base.code.testing</td>
+<td title='base.code.testing.input2()'><b>input2</b><br>Test class: base.code.testing</td>
 <td></td>
 <td>0</td>
-<td>base.code.testing@73ee04c8</td></tr>
+<td>base.code.testing@6b8ca3c8</td></tr>
+<tr>
+<td title='base.code.testing.number_of_times_called_add()'><b>number_of_times_called_add</b><br>Test class: base.code.testing</td>
+<td></td>
+<td>0</td>
+<td>base.code.testing@6b8ca3c8</td></tr>
 </table><p>
 </body>
 </html>
