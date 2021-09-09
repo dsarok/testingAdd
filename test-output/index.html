@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse--1578067448\testng-customsuite.xml</span>
+                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-444464454\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,17 +128,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="negativenumber">negativenumber</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="noinput">noinput</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="number_of_times_called_add">number_of_times_called_add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="simpleinput">simpleinput</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -165,8 +165,8 @@
                   </a> <!-- input1 -->
                   <span class="method-name">input1</span>
                   <div class="stack-trace">java.lang.Exception: no negative numbers allowed -9 -2 -4 -655 
-	at base.code.Stringcalculator.Add(Stringcalculator.java:40)
-	at base.code.testing.input1(testing.java:23)
+	at base.code.Stringcalculator.Add(Stringcalculator.java:42)
+	at base.code.testing.input1(testing.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -223,13 +223,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="negativenumber">
-                  </a> <!-- negativenumber -->
-                  <span class="method-name">negativenumber</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="noinput">
                   </a> <!-- noinput -->
                   <span class="method-name">noinput</span>
@@ -242,12 +235,19 @@
                   <span class="method-name">number_of_times_called_add</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleinput">
+                  </a> <!-- simpleinput -->
+                  <span class="method-name">simpleinput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse--1578067448\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-444464454\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -298,34 +298,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'input1')
+data.setCell(0, 1, 'noinput')
 data.setCell(0, 2, 'base.code.testing')
-data.setCell(0, 3, 7);
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'input2')
+data.setCell(1, 1, 'simpleinput')
 data.setCell(1, 2, 'base.code.testing')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'negativenumber')
+data.setCell(2, 1, 'input1')
 data.setCell(2, 2, 'base.code.testing')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'number_of_times_called_add')
+data.setCell(3, 1, 'input2')
 data.setCell(3, 2, 'base.code.testing')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'input3')
+data.setCell(4, 1, 'number_of_times_called_add')
 data.setCell(4, 2, 'base.code.testing')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'noinput')
+data.setCell(5, 1, 'input3')
 data.setCell(5, 2, 'base.code.testing')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -353,30 +353,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">base.code.testing</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">input1</span>
+                <span class="method-name">noinput</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">simpleinput</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">input1</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">input2</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">input3</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">negativenumber</span>
-                <span class="method-start">16 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">noinput</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">number_of_times_called_add</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

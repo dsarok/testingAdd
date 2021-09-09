@@ -7,9 +7,11 @@ public class Stringcalculator extends Exception{
 	 public int GetCalledCount() {
 		 return Stringcalculator.count;
 	 }
-	 
-	 public int Add(String r) throws Exception  {
+	 public static void increment() {
 		 count++;
+	 }
+	 public int Add(String r) throws Exception  {
+		 increment();
 		 String ss="";
 		 String[] kh=(r.split("\\D{1}"));
 		 String pattern="\\-\\d+";

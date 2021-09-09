@@ -2,20 +2,28 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-09T21:20:13 IST" name="Default suite" finished-at="2021-09-09T21:20:13 IST" duration-ms="53">
+  <suite started-at="2021-09-09T22:10:01 IST" name="Default suite" finished-at="2021-09-09T22:10:01 IST" duration-ms="57">
     <groups>
     </groups>
-    <test started-at="2021-09-09T21:20:13 IST" name="Default test" finished-at="2021-09-09T21:20:13 IST" duration-ms="53">
+    <test started-at="2021-09-09T22:10:01 IST" name="Default test" finished-at="2021-09-09T22:10:01 IST" duration-ms="57">
       <class name="base.code.testing">
-        <test-method signature="input1()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="input1" finished-at="2021-09-09T21:20:13 IST" duration-ms="7" status="FAIL">
+        <test-method signature="noinput()[pri:1, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="noinput" finished-at="2021-09-09T22:10:01 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noinput -->
+        <test-method signature="simpleinput()[pri:2, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="simpleinput" finished-at="2021-09-09T22:10:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleinput -->
+        <test-method signature="input1()[pri:3, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="input1" finished-at="2021-09-09T22:10:01 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[no negative numbers allowed -9 -2 -4 -655 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: no negative numbers allowed -9 -2 -4 -655 
-at base.code.Stringcalculator.Add(Stringcalculator.java:40)
-at base.code.testing.input1(testing.java:23)
+at base.code.Stringcalculator.Add(Stringcalculator.java:42)
+at base.code.testing.input1(testing.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,23 +58,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- input1 -->
-        <test-method signature="input2()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="input2" finished-at="2021-09-09T21:20:13 IST" duration-ms="3" status="PASS">
+        <test-method signature="input2()[pri:4, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="input2" finished-at="2021-09-09T22:10:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- input2 -->
-        <test-method signature="input3()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="input3" finished-at="2021-09-09T21:20:13 IST" duration-ms="0" status="PASS">
+        <test-method signature="input3()[pri:5, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="input3" finished-at="2021-09-09T22:10:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- input3 -->
-        <test-method signature="negativenumber()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="negativenumber" finished-at="2021-09-09T21:20:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativenumber -->
-        <test-method signature="noinput()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="noinput" finished-at="2021-09-09T21:20:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noinput -->
-        <test-method signature="number_of_times_called_add()[pri:0, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T21:20:13 IST" name="number_of_times_called_add" finished-at="2021-09-09T21:20:13 IST" duration-ms="1" status="PASS">
+        <test-method signature="number_of_times_called_add()[pri:6, instance:base.code.testing@6b8ca3c8]" started-at="2021-09-09T22:10:01 IST" name="number_of_times_called_add" finished-at="2021-09-09T22:10:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- number_of_times_called_add -->
