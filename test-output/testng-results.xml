@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-09T04:08:59 IST" name="Default suite" finished-at="2021-09-09T04:08:59 IST" duration-ms="49">
+  <suite started-at="2021-09-09T15:00:47 IST" name="Default suite" finished-at="2021-09-09T15:00:47 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2021-09-09T04:08:59 IST" name="Default test" finished-at="2021-09-09T04:08:59 IST" duration-ms="49">
+    <test started-at="2021-09-09T15:00:47 IST" name="Default test" finished-at="2021-09-09T15:00:47 IST" duration-ms="69">
       <class name="base.code.testing">
-        <test-method signature="noinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T04:08:59 IST" name="noinput" finished-at="2021-09-09T04:08:59 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noinput -->
-        <test-method signature="singleinput()[pri:0, instance:base.code.testing@61386958]" started-at="2021-09-09T04:08:59 IST" name="singleinput" finished-at="2021-09-09T04:08:59 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.Exception">
+        <test-method signature="negativenumber()[pri:0, instance:base.code.testing@73ee04c8]" started-at="2021-09-09T15:00:47 IST" name="negativenumber" finished-at="2021-09-09T15:00:47 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no negative numbers allowed-2 -4 ]]>
+              <![CDATA[expected [242] but found [248]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Exception: no negative numbers allowed-2 -4 
-at base.code.Stringcalculator.Add(Stringcalculator.java:34)
-at base.code.testing.singleinput(testing.java:17)
+              <![CDATA[java.lang.AssertionError: expected [242] but found [248]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at base.code.testing.negativenumber(testing.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,10 +51,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- singleinput -->
+        </test-method> <!-- negativenumber -->
+        <test-method signature="noinput()[pri:0, instance:base.code.testing@73ee04c8]" started-at="2021-09-09T15:00:47 IST" name="noinput" finished-at="2021-09-09T15:00:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noinput -->
+        <test-method signature="simpleinput()[pri:0, instance:base.code.testing@73ee04c8]" started-at="2021-09-09T15:00:47 IST" name="simpleinput" finished-at="2021-09-09T15:00:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleinput -->
       </class> <!-- base.code.testing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

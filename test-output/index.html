@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-1183960128\testng-customsuite.xml</span>
+                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse--768820986\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="singleinput">singleinput</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="negativenumber">negativenumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="noinput">noinput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="base.code.testing" class="method navigator-link" hash-for-method="simpleinput">simpleinput</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -141,12 +146,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="singleinput">
-                  </a> <!-- singleinput -->
-                  <span class="method-name">singleinput</span>
-                  <div class="stack-trace">java.lang.Exception: no negative numbers allowed-2 -4 
-	at base.code.Stringcalculator.Add(Stringcalculator.java:34)
-	at base.code.testing.singleinput(testing.java:17)
+                  <a name="negativenumber">
+                  </a> <!-- negativenumber -->
+                  <span class="method-name">negativenumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [242] but found [248]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at base.code.testing.negativenumber(testing.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,12 +204,19 @@
                   <span class="method-name">noinput</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleinput">
+                  </a> <!-- simpleinput -->
+                  <span class="method-name">simpleinput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-1183960128\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse--768820986\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,20 +265,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'noinput')
+data.setCell(0, 1, 'negativenumber')
 data.setCell(0, 2, 'base.code.testing')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 14);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'singleinput')
+data.setCell(1, 1, 'noinput')
 data.setCell(1, 2, 'base.code.testing')
 data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'simpleinput')
+data.setCell(2, 2, 'base.code.testing')
+data.setCell(2, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 18 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -289,14 +310,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">base.code.testing</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">noinput</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativenumber</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">singleinput</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-name">noinput</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">simpleinput</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
